@@ -1,0 +1,32 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "version": "1.2.4",
+  "short_name": "Slope",
+  "name": "Slope Unblocked Game",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "description": "Slope unblocked game for schools. Playing competitive arcade games is a surefire way to engage students!",
+  "icons": {"128": "slope-128-.png"},
+  "content_security_policy": "script-src 'self' 'unsafe-eval' blob:; object-src 'self'",
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "js/const.js",
+      "js/bg.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "slope-128-.png",
+    "game-slope-unblocked.html",
+    "play.png"
+  ],
+  "browser_action": {
+    "default_icon": "slope-128-.png",
+    "default_title": "Play Slope"
+  }
+}
